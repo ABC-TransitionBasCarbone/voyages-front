@@ -42,7 +42,7 @@ async function importPreviewFile({
 
 async function importFile(fileName: string) {
   try {
-    return await import(`@abc-transitionbascarbone/nosgestesempreinte-modele/public/${fileName}`).then((module) => module.default)
+    return await import(`@abc-transitionbascarbone/voyages-modele/public/${fileName}`).then((module) => module.default)
   } catch (e) {
     console.error('importFile error', e)
     return {}

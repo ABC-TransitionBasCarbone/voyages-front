@@ -1,7 +1,7 @@
 import {
   SupportedRegionType,
   SupportedRegions,
-} from '@abc-transitionbascarbone/nosgestesempreinte-modele'
+} from '@abc-transitionbascarbone/voyages-modele'
 
 export const sortSupportedRegions = ({
   supportedRegions,

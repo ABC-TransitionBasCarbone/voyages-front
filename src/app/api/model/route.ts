@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 
-import models from '@abc-transitionbascarbone/nosgestesempreinte-modele/public/co2-model.FR-lang.fr.json'
-import personas from '@abc-transitionbascarbone/nosgestesempreinte-modele/public/personas-fr.json'
+import models from '@abc-transitionbascarbone/voyages-modele/public/co2-model.FR-lang.fr.json'
+import personas from '@abc-transitionbascarbone/voyages-modele/public/personas-fr.json'
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url)
