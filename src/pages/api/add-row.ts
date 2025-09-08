@@ -64,8 +64,8 @@ export default async function addRow(
           valueInputOption: 'USER_ENTERED',
           range: "'details-trajet'!A1",
           resource: {
-            values: voitures.map(({ label, opinionWayId, distance, reccurrence, period, passengers }) => [
-              opinionWayId,
+            values: voitures.map(({ label, surveyId, distance, reccurrence, period, passengers }) => [
+              surveyId,
               label,
               distance,
               reccurrence,

@@ -16,7 +16,7 @@ export function generateSimulation({
   groups,
   savedViaEmail,
   migrationInstructions,
-  opinionWayId,
+  surveyId,
   voitures = [],
   suggestions = {}
 }: Partial<Simulation> & {
@@ -35,7 +35,7 @@ export function generateSimulation({
     polls,
     groups,
     savedViaEmail,
-    opinionWayId,
+    surveyId,
     voitures,
     suggestions
   } as Simulation

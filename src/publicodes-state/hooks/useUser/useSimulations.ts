@@ -64,9 +64,9 @@ export default function useSimulations({
         })
 
         const urlParams = new URLSearchParams(window.location.search);
-        const opinionWayId = urlParams.get('opinion-way-id');
-        if (opinionWayId) {
-          migratedSimulation.opinionWayId = opinionWayId;
+        const surveyId = urlParams.get('survey-id');
+        if (surveyId) {
+          migratedSimulation.surveyId = surveyId;
         }
 
         newCurrentId = migratedSimulation.id

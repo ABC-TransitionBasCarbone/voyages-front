@@ -74,7 +74,7 @@ export type Simulation = {
   polls?: string[] | null
   groups?: string[] | null
   savedViaEmail?: boolean
-  opinionWayId: string
+  surveyId: string
   voitures?: Journey[]
   suggestions: AideSaisie
 }

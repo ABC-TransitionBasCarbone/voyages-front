@@ -114,7 +114,7 @@ export default function AddJourneyMobile({ setJourneys, className }: Props) {
                 {
                   id: uuid(),
                   label,
-                  opinionWayId: currentSimulation.opinionWayId,
+                  surveyId: currentSimulation.surveyId,
                   distance: Number(distance),
                   reccurrence,
                   period,

@@ -39,7 +39,7 @@ export default function SimulationSyncProvider({
     polls,
     groups,
     savedViaEmail,
-    opinionWayId,
+    surveyId,
     voitures,
     suggestions
   } = useCurrentSimulation()
@@ -91,7 +91,7 @@ export default function SimulationSyncProvider({
           polls,
           groups,
           savedViaEmail,
-          opinionWayId,
+          surveyId,
           voitures,
           suggestions
         },
@@ -113,7 +113,7 @@ export default function SimulationSyncProvider({
     saveSimulation,
     shouldSyncWithBackend,
     resetSyncTimer,
-    opinionWayId,
+    surveyId,
     voitures,
     suggestions
   ])

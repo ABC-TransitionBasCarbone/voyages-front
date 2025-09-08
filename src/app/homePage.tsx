@@ -8,16 +8,16 @@ import { useCurrentSimulation } from '@/publicodes-state';
 export default function Homepage() {
   const { progression } = useCurrentSimulation()
 
-  const [opinionWayId, setOpinionWayId] = useState<string | null>(null);
+  const [surveyId, setSurveyId] = useState<string | null>(null);
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
-    const opinionWayId = urlParams.get('opinion-way-id');
-    setOpinionWayId(opinionWayId);
+    const surveyId = urlParams.get('survey-id');
+    setSurveyId(surveyId);
 
     const storedData = localStorage.getItem('nosgestesempreinte::v1');
-    if (storedData && opinionWayId) {
+    if (storedData && surveyId) {
       const parsedData = JSON.parse(storedData);
-      const opinionWayIdExists = parsedData.simulations.some((simulation: { opinionWayId: string; }) => simulation.opinionWayId === opinionWayId);
+      const opinionWayIdExists = parsedData.simulations.some((simulation: { surveyId: string; }) => simulation.surveyId === surveyId);
       if (!opinionWayIdExists) {
         localStorage.clear();
       }
@@ -50,7 +50,7 @@ export default function Homepage() {
                   : 'Bonjour, vous avez déjà répondu à l\'enquête, merci'
               }
             </div>
-            <div className="text-center">{opinionWayId && progression != 1 && <Buttons/>}</div>
+            <div className="text-center">{surveyId && progression != 1 && <Buttons/>}</div>
           </div>
         </div>
       </Main>
